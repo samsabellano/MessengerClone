@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Document</title>
+
+    <style>
+        body {
+            background: transparent !important;
+            padding: 0;
+            margin: 0;
+            background: #FFFF;
+        }
+
+        .vertical-nav {
+            background: #FFFFFF;
+            min-width: 15rem;
+            width: 22.5rem;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            border: 1px solid #E5E5E5;
+            transition: all 0.3s ease 0s;
+        }
+
+        .vertical-nav-2 {
+            background: #FFFFFF;
+            min-width: 15rem;
+            width: 22.5rem;
+            height: 100vh;
+            position: fixed;
+            /* top: 0px;
+            left: 0px; */
+            border: 1px solid #E5E5E5;
+            transition: all 0.3s ease 0s;
+            float: right;
+        }
+
+        .top-header {
+            padding: 20px 15px;
+        }
+
+        .user-img {
+            height: 36px;
+            width: 36px;
+        }
+
+        .header-content-text {
+            padding-left: 13px;
+            padding-top: 2.8px;
+        }
+
+        .icons {
+            background: #F5F5F5;
+            border-radius: 50%;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            padding: 0px 6px;
+            font-size: 23px;
+        }
+
+        li {
+            list-style: none;
+            margin-left: 11px;
+        }
+
+        .three-top-icons {
+            margin: auto;
+        }
+
+        .txt-search {
+            border-radius: 30px;
+            border: none;
+            background: #F3F3F5;
+            padding-left: 33px;
+            padding-bottom: 6px;
+            padding-top: 6px;
+        }
+
+        .txt-search:focus,
+        .txt-search:active {
+            outline: none;
+        }
+
+        .header-search {
+            position: relative;
+        }
+
+        .header-search i {
+            position: relative;
+            top: 33px;
+            left: 10px;
+            font-size: 20px;
+        }
+
+        .contact-list-container {
+            margin-top: 23px;
+        }
+
+        .contact-list-container a {
+            text-decoration: none;
+        }
+
+        .contact-list-container li {
+            background: #F5F5F5;
+            list-style-type: none;
+            margin-left: 0px;
+            padding: 6px 10px;
+            border-radius: 7px;
+        }
+
+        .info-content {
+            padding-left: 10px;
+            margin: auto 0;
+        }
+
+        .info-content .name {
+            font-size: 14px;
+            font-weight: 500;
+            color: #444444;
+        }
+
+        .contact-info img {
+            height: 58px;
+            width: 58px;
+            object-fit: cover;
+        }
+
+        .text {
+            white-space: nowrap;
+            width: 73%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            position: relative;
+        }
+
+        .text #not-read {
+            font-weight: 500;
+            color: #444444;
+        }
+
+        .message-content {
+            color: #65676b;
+        }
+
+        #no-bg {
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row d-flex">
+        <div class="vertical-nav">
+            <div class="top-header">
+                <div class="header-content d-flex">
+                    <div class="header-content-img">
+                        <img class="user-img rounded-circle" src="me.jpg" alt="">
+                    </div>
+                    <div class="header-content-text">
+                        <h4 class="font-weight-bold">Chats</h4>
+                    </div>
+                    <div class="three-top-icons w-75">
+                        <div class="icon-container d-flex float-right">
+                            <li>
+                                <a class="icons btn btn-circle text-center" href="">
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </a>
+                            </li>
+                            <li><a class="icons btn btn-circle text-center" href="">
+                                    <i class='bx bxs-video-plus'></i>
+                                </a></li>
+                            <li>
+                                <a class="icons btn btn-circle text-center" href="">
+                                    <i class='bx bxs-edit'></i>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-search">
+                    <i class='bx bx-search'></i>
+                    <input class="w-100 txt-search" type="text" placeholder="Search Messenger">
+                </div>
+                <div class="contact-list-container">
+                    <li>
+                        <a href="#">
+                            <div class="info-container d-flex">
+                                <div class="contact-info ">
+                                    <img src="download.jpg" class="rounded-circle" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <div class="name">
+                                        Melinda Gates
+                                    </div>
+                                    <div class="message-content d-flex">
+                                        <div class="text pr-2">
+                                            <small>This will add a hidden scrollbar to the side</small>
+                                        </div>
+                                        <span>
+                                            <small class="time-seen">5 mins</small>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="no-bg">
+                        <a href="#">
+                            <div class="info-container d-flex">
+                                <div class="contact-info ">
+                                    <img src="paris.jpg" class="rounded-circle" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <div class="name">
+                                        Jemmuel Sabellano
+                                    </div>
+                                    <div class="message-content d-flex">
+                                        <div class="text pr-2">
+                                            <small id="not-read">Naa ko sa balay maga online class palang</small>
+                                        </div>
+                                        <span>
+                                            <small class="time-seen">54 sec</small>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="no-bg">
+                        <a href="#">
+                            <div class="info-container d-flex">
+                                <div class="contact-info ">
+                                    <img src="p1.jpg" class="rounded-circle" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <div class="name">
+                                        Indian Guy
+                                    </div>
+                                    <div class="message-content d-flex">
+                                        <div class="text pr-2">
+                                            <small id="not-read">You missed a video chat with India Guy js</small>
+                                        </div>
+                                        <span>
+                                            <small class="time-seen">15 mins</small>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="no-bg">
+                        <a href="#">
+                            <div class="info-container d-flex">
+                                <div class="contact-info ">
+                                    <img src="p2.jpg" class="rounded-circle" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <div class="name">
+                                        Girl In The Mirror
+                                    </div>
+                                    <div class="message-content d-flex">
+                                        <div class="text pr-2">
+                                            <small>Allright, thanks for the documents. I will check</small>
+                                        </div>
+                                        <span>
+                                            <small class="time-seen">1 day</small>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="no-bg">
+                        <a href="#">
+                            <div class="info-container d-flex">
+                                <div class="contact-info ">
+                                    <img src="p3.jpg" class="rounded-circle" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <div class="name">
+                                        Bill Gates
+                                    </div>
+                                    <div class="message-content d-flex">
+                                        <div class="text pr-2">
+                                            <small>Wow! Where did you snap that? Looks really</small>
+                                        </div>
+                                        <span>
+                                            <small class="time-seen">1 hour</small>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="no-bg">
+                        <a href="#">
+                            <div class="info-container d-flex">
+                                <div class="contact-info ">
+                                    <img src="p4.jpg" class="rounded-circle" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <div class="name">
+                                        Lolo Dokyo
+                                    </div>
+                                    <div class="message-content d-flex">
+                                        <div class="text pr-2">
+                                            <small id="not-read">I have the same problem but with sbadmin</small>
+                                        </div>
+                                        <span>
+                                            <small class="time-seen">2 mins</small>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="no-bg">
+                        <a href="#">
+                            <div class="info-container d-flex">
+                                <div class="contact-info ">
+                                    <img src="p6.jpg" class="rounded-circle" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <div class="name">
+                                        Mark Zuckerberg
+                                    </div>
+                                    <div class="message-content d-flex">
+                                        <div class="text pr-2">
+                                            <small>Wow nice meme, Your are banned 100 da</small>
+                                        </div>
+                                        <span>
+                                            <small class="time-seen">10 mins</small>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="no-bg">
+                        <a href="#">
+                            <div class="info-container d-flex">
+                                <div class="contact-info ">
+                                    <img src="p7.jpg" class="rounded-circle" alt="">
+                                </div>
+                                <div class="info-content">
+                                    <div class="name">
+                                        Elon Musk
+                                    </div>
+                                    <div class="message-content d-flex">
+                                        <div class="text pr-2">
+                                            <small id="not-read">In publishing and graphic design, Lorem </small>
+                                        </div>
+                                        <span>
+                                            <small class="time-seen">Just now</small>
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 m-auto text-center">
+            <div class="container-fluid bg-light">
+                Hi there!
+            </div>
+        </div>
+        <!-- <div class="col">
+            <div class="vertical-nav-2 float-lg-right">
+                <div class="top-header">
+                    <div class="header-content d-flex">
+                        <div class="header-content-img">
+                            <img class="user-img rounded-circle" src="user.jpg" alt="">
+                        </div>
+                        <div class="header-content-text">
+                            <h4 class="font-weight-bold">Chats</h4>
+                        </div>
+                        <div class="three-top-icons w-75">
+                            <div class="icon-container d-flex float-right">
+                                <li>
+                                    <a class="icons btn btn-circle text-center" href="">
+                                        <i class='bx bx-dots-horizontal-rounded'></i>
+                                    </a>
+                                </li>
+                                <li><a class="icons btn btn-circle text-center" href="">
+                                        <i class='bx bxs-video-plus'></i>
+                                    </a></li>
+                                <li>
+                                    <a class="icons btn btn-circle text-center" href="">
+                                        <i class='bx bxs-edit'></i>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-search">
+                        <i class='bx bx-search'></i>
+                        <input class="w-100 txt-search" type="text" placeholder="Search Messenger">
+                    </div>
+                    <div class="contact-list-container">
+                        <li>
+                            <a href="#">
+                                <div class="info-container d-flex">
+                                    <div class="contact-info ">
+                                        <img src="download.jpg" class="rounded-circle" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="name">
+                                            Melinda Gates
+                                        </div>
+                                        <div class="message-content d-flex">
+                                            <div class="text pr-2">
+                                                <small>This will add a hidden scrollbar to the side</small>
+                                            </div>
+                                            <span>
+                                                <small class="time-seen">5 mins</small>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="no-bg">
+                            <a href="#">
+                                <div class="info-container d-flex">
+                                    <div class="contact-info ">
+                                        <img src="paris.jpg" class="rounded-circle" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="name">
+                                            Gavin Moses Bagas
+                                        </div>
+                                        <div class="message-content d-flex">
+                                            <div class="text pr-2">
+                                                <small id="not-read">Naa ko sa balay maga online class palang</small>
+                                            </div>
+                                            <span>
+                                                <small class="time-seen">54 sec</small>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="no-bg">
+                            <a href="#">
+                                <div class="info-container d-flex">
+                                    <div class="contact-info ">
+                                        <img src="p1.jpg" class="rounded-circle" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="name">
+                                            Indian Guy
+                                        </div>
+                                        <div class="message-content d-flex">
+                                            <div class="text pr-2">
+                                                <small id="not-read">You missed a video chat with India Guy js</small>
+                                            </div>
+                                            <span>
+                                                <small class="time-seen">15 mins</small>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="no-bg">
+                            <a href="#">
+                                <div class="info-container d-flex">
+                                    <div class="contact-info ">
+                                        <img src="p2.jpg" class="rounded-circle" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="name">
+                                            Girl In The Mirror
+                                        </div>
+                                        <div class="message-content d-flex">
+                                            <div class="text pr-2">
+                                                <small>Allright, thanks for the documents. I will check</small>
+                                            </div>
+                                            <span>
+                                                <small class="time-seen">1 day</small>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="no-bg">
+                            <a href="#">
+                                <div class="info-container d-flex">
+                                    <div class="contact-info ">
+                                        <img src="p3.jpg" class="rounded-circle" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="name">
+                                            Bill Gates
+                                        </div>
+                                        <div class="message-content d-flex">
+                                            <div class="text pr-2">
+                                                <small>Wow! Where did you snap that? Looks really</small>
+                                            </div>
+                                            <span>
+                                                <small class="time-seen">1 hour</small>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="no-bg">
+                            <a href="#">
+                                <div class="info-container d-flex">
+                                    <div class="contact-info ">
+                                        <img src="p4.jpg" class="rounded-circle" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="name">
+                                            Lolo Dokyo
+                                        </div>
+                                        <div class="message-content d-flex">
+                                            <div class="text pr-2">
+                                                <small id="not-read">I have the same problem but with sbadmin</small>
+                                            </div>
+                                            <span>
+                                                <small class="time-seen">2 mins</small>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="no-bg">
+                            <a href="#">
+                                <div class="info-container d-flex">
+                                    <div class="contact-info ">
+                                        <img src="p6.jpg" class="rounded-circle" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="name">
+                                            Mark Zuckerberg
+                                        </div>
+                                        <div class="message-content d-flex">
+                                            <div class="text pr-2">
+                                                <small>Wow Nice Meme, Your are banned 100 da</small>
+                                            </div>
+                                            <span>
+                                                <small class="time-seen">10 mins</small>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="no-bg">
+                            <a href="#">
+                                <div class="info-container d-flex">
+                                    <div class="contact-info ">
+                                        <img src="p7.jpg" class="rounded-circle" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="name">
+                                            Elon Musk
+                                        </div>
+                                        <div class="message-content d-flex">
+                                            <div class="text pr-2">
+                                                <small id="not-read">In publishing and graphic design, Lorem </small>
+                                            </div>
+                                            <span>
+                                                <small class="time-seen">Just now</small>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
